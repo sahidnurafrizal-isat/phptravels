@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37488" started-at="2019-07-26T10:41:27Z" finished-at="2019-07-26T10:42:04Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3a03464]" name="feature" class="TestRunner"/>
+      </group>
+    </groups>
+    <test name="Test" duration-ms="37488" started-at="2019-07-26T10:41:27Z" finished-at="2019-07-26T10:42:04Z">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3a03464]" name="setUpClass" is-config="true" duration-ms="854" started-at="2019-07-26T10:41:27Z" finished-at="2019-07-26T10:41:28Z">
+        </test-method>
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3a03464]" name="feature" duration-ms="36320" started-at="2019-07-26T10:41:28Z" description="Runs Cucumber Feature" finished-at="2019-07-26T10:42:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New Customer Registration]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3a03464]" name="tearDownClass" is-config="true" duration-ms="50" started-at="2019-07-26T10:42:04Z" finished-at="2019-07-26T10:42:04Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

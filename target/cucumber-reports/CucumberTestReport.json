@@ -1,0 +1,335 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Open PHP Travels.net homepage on Chrome",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4890034023,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the page on URL \"https://www.phptravels.net/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.phptravels.net/",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefs.i_am_on_the_page_on_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11623401,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see \"PHPTRAVELS | Travel Technology Partner\" on title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PHPTRAVELS | Travel Technology Partner",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePageStepDefs.i_should_see_on_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20278942695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Traverse to sign up menu and do registration",
+        "description": "",
+        "id": "new-customer-registration;traverse-to-sign-up-menu-and-do-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 1223330144,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 296503388,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"My Account\" button on Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My Account",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2756921334,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on \"Sign Up\" button on Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign Up",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4860059,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see \"Register\" on title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePageStepDefs.i_should_see_on_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 314807686,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I fill in \"First Name\" with \"Vanya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Vanya",
+                  "offset": 29
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94359893,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill in \"Last Name\" with \"Krokov\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Krokov",
+                  "offset": 28
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147849736,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I fill in \"Mobile Number\" with \"+627785706034\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile Number",
+                  "offset": 11
+                },
+                {
+                  "val": "+627785706034",
+                  "offset": 32
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238191660,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I fill in \"Email\" with \"vanya@outlook.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email",
+                  "offset": 11
+                },
+                {
+                  "val": "vanya@outlook.com",
+                  "offset": 24
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166959553,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I fill in \"Password\" with \"London2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "London2018",
+                  "offset": 27
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138047173,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I fill in \"Confirm Password\" with \"London2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Confirm Password",
+                  "offset": 11
+                },
+                {
+                  "val": "London2018",
+                  "offset": 35
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167503302,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on \"Sign Up\" button on Registration page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign Up",
+                  "offset": 12
+                }
+              ],
+              "location": "UserRegistrationPageStepDefs.click_on_button_on_registration_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5472732662,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see \"My Account\" on title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My Account",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePageStepDefs.i_should_see_on_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 71979882,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see \"Hi, Vanya Krokov\" on heading of My Account page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hi, Vanya Krokov",
+                  "offset": 14
+                }
+              ],
+              "location": "MyAccountPageStepDefs.i_should_see_on_heading_of_my_account_page(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "New Customer Registration",
+    "description": "User should be able to traverse to registration page from home page",
+    "id": "new-customer-registration",
+    "keyword": "Feature",
+    "uri": "P1-NewCustomerRegistration.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@TestCase01"
+      }
+    ]
+  }
+]
