@@ -8,6 +8,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = {"stepDefinitions"},
+		tags = {"@PrimaryTest"},
 		plugin = {
 				"pretty",
                 "html:target/cucumber-reports/cucumber-pretty",

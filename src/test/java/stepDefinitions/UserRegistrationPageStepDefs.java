@@ -19,8 +19,8 @@ public class UserRegistrationPageStepDefs {
 		facUserRegPage = PageFactory.initElements(driver, UserRegistrationPage.class);
 	}
 	
-	@When("^I fill in \"([^\"]*)\" with \"([^\"]*)\"$")
-	public void i_fill_in_with(String arg1, String arg2) throws Throwable {
+	@When("^I fill in \"([^\"]*)\" with \"([^\"]*)\" on Registration page$")
+	public void i_fill_in_with_on_registration_page(String arg1, String arg2) throws Throwable {
 		
 		switch(arg1) {
 		case "First Name":

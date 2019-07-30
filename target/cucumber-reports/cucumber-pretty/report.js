@@ -1,35 +1,109 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("P1-NewCustomerRegistration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("P1-HotelBookingSearch.feature");
 formatter.feature({
-  "line": 2,
-  "name": "New Customer Registration",
-  "description": "User should be able to traverse to registration page from home page",
-  "id": "new-customer-registration",
+  "comments": [
+    {
+      "line": 1,
+      "value": "#Author: sahid.nurafrizal@inmarsat.com"
+    },
+    {
+      "line": 2,
+      "value": "#Keywords Summary :"
+    },
+    {
+      "line": 3,
+      "value": "#Feature: List of scenarios."
+    },
+    {
+      "line": 4,
+      "value": "#Scenario: Business rule through list of steps with arguments."
+    },
+    {
+      "line": 5,
+      "value": "#Given: Some precondition step"
+    },
+    {
+      "line": 6,
+      "value": "#When: Some key actions"
+    },
+    {
+      "line": 7,
+      "value": "#Then: To observe outcomes or validation"
+    },
+    {
+      "line": 8,
+      "value": "#And,But: To enumerate more Given,When,Then steps"
+    },
+    {
+      "line": 9,
+      "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+    },
+    {
+      "line": 10,
+      "value": "#Examples: Container for s table"
+    },
+    {
+      "line": 11,
+      "value": "#Background: List of steps run before each of the scenarios"
+    },
+    {
+      "line": 12,
+      "value": "#\"\"\" (Doc Strings)"
+    },
+    {
+      "line": 13,
+      "value": "#| (Data Tables)"
+    },
+    {
+      "line": 14,
+      "value": "#@ (Tags/Labels):To group Scenarios"
+    },
+    {
+      "line": 15,
+      "value": "#\u003c\u003e (placeholder)"
+    },
+    {
+      "line": 16,
+      "value": "#\"\""
+    },
+    {
+      "line": 17,
+      "value": "## (Comments)"
+    },
+    {
+      "line": 18,
+      "value": "#Sample Feature Definition Template"
+    }
+  ],
+  "line": 20,
+  "name": "Hotel Booking (Search)",
+  "description": "User can book the hotel as guest user or as registered user",
+  "id": "hotel-booking-(search)",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 1,
-      "name": "@TestCase01"
+      "line": 19,
+      "name": "@PrimaryTest"
     }
   ]
 });
 formatter.before({
-  "duration": 20278942695,
+  "duration": 12201035787,
   "status": "passed"
 });
 formatter.background({
-  "line": 5,
+  "line": 23,
   "name": "Open PHP Travels.net homepage on Chrome",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 6,
+  "line": 24,
   "name": "I am on the page on URL \"https://www.phptravels.net/\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 25,
   "name": "I should see \"PHPTRAVELS | Travel Technology Partner\" on title",
   "keyword": "Then "
 });
@@ -43,7 +117,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 4890034023,
+  "duration": 8591670019,
   "status": "passed"
 });
 formatter.match({
@@ -56,259 +130,223 @@ formatter.match({
   "location": "HomePageStepDefs.i_should_see_on_title(String)"
 });
 formatter.result({
-  "duration": 11623401,
+  "duration": 190923334,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 9,
-  "name": "Traverse to sign up menu and do registration",
+  "line": 27,
+  "name": "All inputs are correct with typing",
   "description": "",
-  "id": "new-customer-registration;traverse-to-sign-up-menu-and-do-registration",
+  "id": "hotel-booking-(search);all-inputs-are-correct-with-typing",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 10,
-  "name": "I click on \"My Account\" button on Homepage",
+  "line": 28,
+  "name": "I click on \"Hotels Tab\" button on Homepage",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I click on \"Sign Up\" button on Homepage",
+  "line": 29,
+  "name": "I click on \"City/Hotel Name\" button on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
-  "name": "I should see \"Register\" on title",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I fill in \"First Name\" with \"Vanya\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 14,
-  "name": "I fill in \"Last Name\" with \"Krokov\"",
+  "line": 30,
+  "name": "I fill in \"City/Hotel Name\" with \"Delhi\" on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "I fill in \"Mobile Number\" with \"+627785706034\"",
+  "line": 31,
+  "name": "I click on \"1\" choice from the \"City/Hotel Name\" dropdown on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
-  "name": "I fill in \"Email\" with \"vanya@outlook.com\"",
+  "line": 32,
+  "name": "I fill in \"Check In\" with \"15/08/2019\" on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "I fill in \"Password\" with \"London2018\"",
+  "line": 33,
+  "name": "I fill in \"Check Out\" with \"17/08/2019\" on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
-  "name": "I fill in \"Confirm Password\" with \"London2018\"",
+  "line": 34,
+  "name": "I click on \"Guest Details\" button on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
-  "name": "I click on \"Sign Up\" button on Registration page",
+  "line": 35,
+  "name": "I fill in \"Guest Adult Count\" with \"3\" on Homepage",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
-  "name": "I should see \"My Account\" on title",
-  "keyword": "Then "
+  "line": 36,
+  "name": "I fill in \"Guest Child Count\" with \"2\" on Homepage",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 21,
-  "name": "I should see \"Hi, Vanya Krokov\" on heading of My Account page",
+  "line": 37,
+  "name": "I click on \"Search\" button on Homepage",
   "keyword": "And "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My Account",
+      "val": "Hotels Tab",
       "offset": 12
     }
   ],
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 296503388,
+  "duration": 348850556,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Sign Up",
+      "val": "City/Hotel Name",
       "offset": 12
     }
   ],
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 2756921334,
+  "duration": 253447755,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Register",
-      "offset": 14
-    }
-  ],
-  "location": "HomePageStepDefs.i_should_see_on_title(String)"
-});
-formatter.result({
-  "duration": 4860059,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "First Name",
+      "val": "City/Hotel Name",
       "offset": 11
     },
     {
-      "val": "Vanya",
-      "offset": 29
+      "val": "Delhi",
+      "offset": 34
     }
   ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 314807686,
+  "duration": 2519064906,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Last Name",
-      "offset": 11
+      "val": "1",
+      "offset": 12
     },
     {
-      "val": "Krokov",
-      "offset": 28
-    }
-  ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
-});
-formatter.result({
-  "duration": 94359893,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Mobile Number",
-      "offset": 11
-    },
-    {
-      "val": "+627785706034",
+      "val": "City/Hotel Name",
       "offset": 32
     }
   ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+  "location": "HomePageStepDefs.i_click_on_choice_from_the_dropdown_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 147849736,
+  "duration": 3844639467,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Email",
+      "val": "Check In",
       "offset": 11
     },
     {
-      "val": "vanya@outlook.com",
-      "offset": 24
-    }
-  ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
-});
-formatter.result({
-  "duration": 238191660,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Password",
-      "offset": 11
-    },
-    {
-      "val": "London2018",
+      "val": "15/08/2019",
       "offset": 27
     }
   ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 166959553,
+  "duration": 149085443,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Confirm Password",
+      "val": "Check Out",
       "offset": 11
     },
     {
-      "val": "London2018",
-      "offset": 35
+      "val": "17/08/2019",
+      "offset": 28
     }
   ],
-  "location": "UserRegistrationPageStepDefs.i_fill_in_with(String,String)"
+  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 138047173,
+  "duration": 143531822,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Sign Up",
+      "val": "Guest Details",
       "offset": 12
     }
   ],
-  "location": "UserRegistrationPageStepDefs.click_on_button_on_registration_page(String)"
+  "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 167503302,
+  "duration": 98692243,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My Account",
-      "offset": 14
+      "val": "Guest Adult Count",
+      "offset": 11
+    },
+    {
+      "val": "3",
+      "offset": 36
     }
   ],
-  "location": "HomePageStepDefs.i_should_see_on_title(String)"
+  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 5472732662,
+  "duration": 94729450,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Hi, Vanya Krokov",
-      "offset": 14
+      "val": "Guest Child Count",
+      "offset": 11
+    },
+    {
+      "val": "2",
+      "offset": 36
     }
   ],
-  "location": "MyAccountPageStepDefs.i_should_see_on_heading_of_my_account_page(String)"
+  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 71979882,
+  "duration": 111964214,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Search",
+      "offset": 12
+    }
+  ],
+  "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
+});
+formatter.result({
+  "duration": 149491,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1223330144,
+  "duration": 1383355372,
   "status": "passed"
 });
 });
