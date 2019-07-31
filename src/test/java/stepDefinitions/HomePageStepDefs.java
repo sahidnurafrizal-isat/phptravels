@@ -79,8 +79,19 @@ public class HomePageStepDefs {
 			facHomePage.txt_GuestDetails.click();
 			break;
 		}
-		case "City/Hotel Search Button":{
+		case "City/Hotel Search":{
+			wait.until(ExpectedConditions.visibilityOf(facHomePage.btn_CityHotelSearch));
 			facHomePage.btn_CityHotelSearch.click();
+			break;
+		}
+		case "Adult +":{
+			wait.until(ExpectedConditions.visibilityOf(facHomePage.btn_AdultPlus));
+			facHomePage.btn_AdultPlus.click();
+			break;
+		}
+		case "Child +":{
+			wait.until(ExpectedConditions.visibilityOf(facHomePage.btn_ChildPlus));
+			facHomePage.btn_ChildPlus.click();
 			break;
 		}
 		}

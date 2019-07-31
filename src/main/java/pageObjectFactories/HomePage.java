@@ -78,9 +78,17 @@ public class HomePage {
 	@FindBy(how = How.ID,using = "hadultInput")
 	public WebElement txt_GuestAdult;
 	
+	// Guest - Adult plus button
+	@FindBy(how = How.ID, using = "hadultPlusBtn")
+	public WebElement btn_AdultPlus;
+	
 	// Guest - Child
 	@FindBy(how = How.ID, using = "hchildInput")
 	public WebElement txt_GuestChild;
+	
+	// Guest - Child plus button
+	@FindBy(how = How.ID, using = "hchildPlusBtn")
+	public WebElement btn_ChildPlus;
 	
 	// City/Hotel Search
 	@FindBy(how = How.XPATH, using = "//button[@class='btn btn-lg btn-block btn-primary pfb0 loader']")

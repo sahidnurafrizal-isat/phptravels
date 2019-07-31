@@ -87,7 +87,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 12201035787,
+  "duration": 3549826408,
   "status": "passed"
 });
 formatter.background({
@@ -117,7 +117,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_am_on_the_page_on_URL(String)"
 });
 formatter.result({
-  "duration": 8591670019,
+  "duration": 6460555089,
   "status": "passed"
 });
 formatter.match({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_should_see_on_title(String)"
 });
 formatter.result({
-  "duration": 190923334,
+  "duration": 30914491,
   "status": "passed"
 });
 formatter.scenario({
@@ -178,17 +178,27 @@ formatter.step({
 });
 formatter.step({
   "line": 35,
-  "name": "I fill in \"Guest Adult Count\" with \"3\" on Homepage",
+  "name": "I click on \"Adult +\" button on Homepage",
   "keyword": "And "
 });
 formatter.step({
   "line": 36,
-  "name": "I fill in \"Guest Child Count\" with \"2\" on Homepage",
+  "name": "I click on \"Child +\" button on Homepage",
   "keyword": "And "
 });
 formatter.step({
   "line": 37,
-  "name": "I click on \"Search\" button on Homepage",
+  "name": "I click on \"City/Hotel Search\" button on Homepage",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "I should see \"Result list\" on Result page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "All hotels search result should be from \"New Delhi\"",
   "keyword": "And "
 });
 formatter.match({
@@ -201,7 +211,7 @@ formatter.match({
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 348850556,
+  "duration": 341156159,
   "status": "passed"
 });
 formatter.match({
@@ -214,7 +224,7 @@ formatter.match({
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 253447755,
+  "duration": 281646116,
   "status": "passed"
 });
 formatter.match({
@@ -231,7 +241,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 2519064906,
+  "duration": 387599110,
   "status": "passed"
 });
 formatter.match({
@@ -248,7 +258,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_click_on_choice_from_the_dropdown_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 3844639467,
+  "duration": 4213440612,
   "status": "passed"
 });
 formatter.match({
@@ -265,7 +275,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 149085443,
+  "duration": 201943431,
   "status": "passed"
 });
 formatter.match({
@@ -282,7 +292,7 @@ formatter.match({
   "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
 });
 formatter.result({
-  "duration": 143531822,
+  "duration": 146870458,
   "status": "passed"
 });
 formatter.match({
@@ -295,58 +305,76 @@ formatter.match({
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 98692243,
+  "duration": 106881018,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Guest Adult Count",
-      "offset": 11
-    },
-    {
-      "val": "3",
-      "offset": 36
-    }
-  ],
-  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
-});
-formatter.result({
-  "duration": 94729450,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Guest Child Count",
-      "offset": 11
-    },
-    {
-      "val": "2",
-      "offset": 36
-    }
-  ],
-  "location": "HomePageStepDefs.i_fill_in_with_on_homepage(String,String)"
-});
-formatter.result({
-  "duration": 111964214,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Search",
+      "val": "Adult +",
       "offset": 12
     }
   ],
   "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
 });
 formatter.result({
-  "duration": 149491,
+  "duration": 159569932,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Child +",
+      "offset": 12
+    }
+  ],
+  "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
+});
+formatter.result({
+  "duration": 151853179,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "City/Hotel Search",
+      "offset": 12
+    }
+  ],
+  "location": "HomePageStepDefs.click_on_button_on_homepage(String)"
+});
+formatter.result({
+  "duration": 40851113421,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Result list",
+      "offset": 14
+    }
+  ],
+  "location": "ResultPageStepDefs.i_should_see_on_result_page(String)"
+});
+formatter.result({
+  "duration": 36153518,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "New Delhi",
+      "offset": 41
+    }
+  ],
+  "location": "ResultPageStepDefs.all_hotels_search_result_should_be_from(String)"
+});
+formatter.result({
+  "duration": 5076119219,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1383355372,
+  "duration": 1402534441,
   "status": "passed"
 });
 });

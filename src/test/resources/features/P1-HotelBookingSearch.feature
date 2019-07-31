@@ -32,7 +32,8 @@ Feature: Hotel Booking (Search)
   		And I fill in "Check In" with "15/08/2019" on Homepage
   		And I fill in "Check Out" with "17/08/2019" on Homepage
   		And I click on "Guest Details" button on Homepage
-  		And I fill in "Guest Adult Count" with "3" on Homepage
-  		And I fill in "Guest Child Count" with "2" on Homepage
-  		And I click on "Search" button on Homepage
-  #		Then I should see "Search Result" on title
+  		And I click on "Adult +" button on Homepage
+  		And I click on "Child +" button on Homepage
+  		And I click on "City/Hotel Search" button on Homepage
+  		Then I should see "Result list" on Result page
+  		And All hotels search result should be from "New Delhi"
