@@ -17,12 +17,11 @@ public class MyAccountPageStepDefs {
 	private MyAccountPage facMyAccountPage; 
 	
 	public MyAccountPageStepDefs(){
-		facMyAccountPage = PageFactory.initElements(driver, MyAccountPage.class);
+		facMyAccountPage = new MyAccountPage(driver);
 	}
 	
-	@Then("I should see \"([^\"]*)\" on heading of My Account page")
-	public void i_should_see_on_heading_of_my_account_page(String arg1) throws Throwable {
-		wait.until(ExpectedConditions.visibilityOf(facMyAccountPage.txtHeaderName));
-		Assert.assertEquals(facMyAccountPage.txtHeaderName.getText(), arg1);
+	@Then("^User should see \"([^\"]*)\" on heading of My Account page$")
+	public void user_should_see_on_heading_of_my_account_page(String arg1) throws Throwable {
+		facMyAccountPage.checkHeaderName(arg1);
 	}
 }

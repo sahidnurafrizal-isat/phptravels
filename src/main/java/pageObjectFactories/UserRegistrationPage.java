@@ -4,9 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 public class UserRegistrationPage {
 	final WebDriver driver;
+	
+	public UserRegistrationPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
 	
 	@FindBy(how = How.NAME, using = "firstname")
 	public WebElement txt_FirstName;
@@ -28,8 +34,4 @@ public class UserRegistrationPage {
 	
 	@FindBy(how = How.XPATH, using = "//button[@class='signupbtn btn_full btn btn-action btn-block btn-lg']")
 	public WebElement btn_SignUp;
-	
-	public UserRegistrationPage(WebDriver driver) {
-		this.driver = driver;
-	}
 }

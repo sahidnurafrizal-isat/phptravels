@@ -9,11 +9,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import enums.DriverType;
+import managers.FileReaderManager;
+import managers.WebDriverManager;
 
 public class Hooks {
 	private static WebDriver driver;
 	private static WebDriverWait wait;
 	private static Logger logger = LogManager.getLogger("logger");
+	private FileReaderManager fileReaderManager = FileReaderManager.getInstance();
+	private WebDriverManager webDriverManager;
 	
 	public static WebDriver getDriver() {
 		return driver;
@@ -33,16 +38,16 @@ public class Hooks {
 		BasicConfigurator.configure();
 		
 		// Init driver
-		System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
-		driver = new ChromeDriver();
+		webDriverManager = new WebDriverManager();
+		driver = webDriverManager.getDriver();
 		
-		// Init implicit wait
-		wait = new WebDriverWait(driver,10);
+		// Init explicit wait
+		wait = new WebDriverWait(driver, 10);
 	}
 	
 	@After
 	public void tearDown() {
 		// Quit driver
-		driver.quit();
+		webDriverManager.closeDriver();
 	}
 }

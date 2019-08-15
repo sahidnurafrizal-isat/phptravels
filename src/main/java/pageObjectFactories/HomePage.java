@@ -8,12 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 	final WebDriver driver;
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	// NAVBAR
@@ -23,18 +25,21 @@ public class HomePage {
 	@FindBy(how = How.XPATH, using = "//ul[@class='nav navbar-nav navbar-right hidden-sm go-left']//ul[@class='nav navbar-nav navbar-side navbar-right sidebar go-left user_menu']//li[@id='li_myaccount']//ul[@class='dropdown-menu']//li//a[@class='go-text-right'][contains(text(),'Sign Up')]")
 	public WebElement btn_SignUp;
 	
+	@FindBy(how = How.XPATH, using = "//ul[@class='nav navbar-nav navbar-right hidden-sm go-left']//ul[@class='nav navbar-nav navbar-side navbar-right sidebar go-left user_menu']//li[@id='li_myaccount']//ul[@class='dropdown-menu']//li//a[@class='go-text-right'][contains(text(),'Login')]")
+	public WebElement btn_Login;
+	
 	// MAIN AREA
 	// Tabs
-	@FindBy(how = How.XPATH, using = "//li[@data-title='thhotels']")
+	@FindBy(how = How.XPATH, using = "//a[@title='Hotels']")
 	public WebElement btn_TabHotels;
 	
-	@FindBy(how = How.XPATH, using = "//li[@data-title='thflight']")
+	@FindBy(how = How.XPATH, using = "//a[@title='Flights']")
 	public WebElement btn_TabFlights;
 	
-	@FindBy(how = How.XPATH, using = "//li[@data-title='tours']")
+	@FindBy(how = How.XPATH, using = "//a[@title='Tours']")
 	public WebElement btn_TabTours;
 	
-	@FindBy(how = How.XPATH, using = "//li[@data-title='cars']")
+	@FindBy(how = How.XPATH, using = "//a[@title='Cars']")
 	public WebElement btn_TabCars;
 	
 	// City/Hotel
