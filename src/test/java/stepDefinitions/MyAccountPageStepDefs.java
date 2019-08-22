@@ -22,6 +22,6 @@ public class MyAccountPageStepDefs {
 	
 	@Then("^User should see \"([^\"]*)\" on heading of My Account page$")
 	public void user_should_see_on_heading_of_my_account_page(String arg1) throws Throwable {
-		facMyAccountPage.checkHeaderName(arg1);
+		Assert.assertEquals(facMyAccountPage.getHeaderName(), arg1);
 	}
 }

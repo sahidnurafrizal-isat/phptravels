@@ -16,7 +16,7 @@ Feature: New Customer Registration
       | First Name       | Vanya             | 
       | Last Name        | Krokov            | 
       | Mobile Number    | +627785706034     | 
-      | Email            | krokov@outlook.com | 
+      | Email            | krokov1@outlook.com | 
       | Password         | London2018        | 
       | Confirm Password | London2018        | 
 		And User click on "Sign Up" button on Registration page

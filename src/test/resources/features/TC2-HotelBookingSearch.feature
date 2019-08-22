@@ -2,7 +2,7 @@
 
 @TestAll
 @P1Test
-@Ignore
+
 Feature: Hotel Booking (Search)
   User can book the hotel as guest user or as registered user
 

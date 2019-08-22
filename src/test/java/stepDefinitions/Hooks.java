@@ -17,7 +17,6 @@ public class Hooks {
 	private static WebDriver driver;
 	private static WebDriverWait wait;
 	private static Logger logger = LogManager.getLogger("logger");
-	private FileReaderManager fileReaderManager = FileReaderManager.getInstance();
 	private WebDriverManager webDriverManager;
 	
 	public static WebDriver getDriver() {

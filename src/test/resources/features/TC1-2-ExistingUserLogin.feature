@@ -13,7 +13,7 @@ Feature: Existing User Login
 	Scenario: Login with valid login ID
 		When User fills in below data on Login page:
 			| Field    | Value              | 
-      | Email    | krokov@outlook.com | 
+      | Email    | krokov1@outlook.com | 
       | Password | London2018         | 
 		And User clicks on "Login" button on Login Page
 		Then User should be on "My Account" page
